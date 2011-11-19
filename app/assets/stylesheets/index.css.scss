@@ -9,6 +9,10 @@ body {
     @include body_text;
 }
 
+.top_image {
+    position: relative;
+}
+
 #tabSelector {
     background-color: $red;
 }

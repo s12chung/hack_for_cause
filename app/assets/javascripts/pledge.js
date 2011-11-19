@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $("#pledge-submit").click(function(e) {
         var time = new Date().getTime();
-        $("#time").val(time);
+        $("#pledge_time").val(time);
+
 
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
@@ -9,9 +10,10 @@ $(document).ready(function() {
 
 
                 var apiStruct = {
-                    "name": $("#charity_name").val(),
+                    "name": $("#pledge_charity_name").val(),
                     "latlng": latlng.toString(),
-                    "amount": $("#amount").val(),
+                    "amount": $("#pledge_amount").val(),
+
                     "time": time
                 };
 
@@ -30,7 +32,7 @@ $(document).ready(function() {
                     }
                 });
             }/*, error*/);
-        }
+         }
 
         e.preventDefault();
     });

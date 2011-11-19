@@ -1,23 +1,30 @@
 <div id="header">
-    <ul id='tabSelector' class='base-tabs clearfix'>
-        <li><a href="#">DASH</a></li>
-        <li class="on"><a href="#">PLEDGE</a></li>
-    </ul>
+  <div class="top_image">
+    <%= image_tag "/images/top_banner.png" %>
+    <div>
+      Free The Children
+    </div>
+  </div>
+
+  <ul id='tabSelector' class='base-tabs clearfix'>
+    <li><a href="#">DASH</a></li>
+    <li class="on"><a href="#">PLEDGE</a></li>
+  </ul>
 </div>
 <div id="container">
-    <div id='gallery'>
-      <div id='tabs'>
-        <ul>
-          <%= render :partial => "dashboard" %>
-          <%= render :partial => "pledge" %>
-        </ul>
-      </div>
+  <div id='gallery'>
+    <div id='tabs'>
+      <ul>
+        <%= render :partial => "dashboard" %>
+        <%= render :partial => "pledge" %>
+      </ul>
     </div>
+  </div>
 
-    <%= render :partial => "settings" %>
+  <%= render :partial => "settings" %>
 
-    <div id="settings">
-      <a href="#" class="go-to-settings"></a>
-      <a href="#" class="go-to-pledge"></a>
-    </div>
+  <div id="settings">
+    <a href="#" class="go-to-settings"></a>
+    <a href="#" class="go-to-pledge"></a>
+  </div>
 </div>
