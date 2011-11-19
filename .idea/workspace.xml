@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ed59a3-6b43-4454-810b-1e6bfa487f1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/clears.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/settings.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/settings.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" />
     </list>
     <ignored path="hack_for_cause.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,28 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pledges.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pledges.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="23" selection-start="321" selection-end="321" vertical-scroll-proportion="0.3548387">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_settings.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pledges/_settings.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="9" selection-start="483" selection-end="483" vertical-scroll-proportion="-3.9">
+            <state line="13" column="9" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,16 +47,70 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="453" selection-end="453" vertical-scroll-proportion="-11.25">
+            <state line="15" column="2" selection-start="350" selection-end="350" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clears.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/clears.css.scss">
+      <file leaf-file-name="index.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="1" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+            <state line="28" column="10" selection-start="351" selection-end="351" vertical-scroll-proportion="0.6741573">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="100" selection-start="741" selection-end="741" vertical-scroll-proportion="-8.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="19" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pledge.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pledge.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="7" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pledge.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pledges/_pledge.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="30" selection-start="730" selection-end="730" vertical-scroll-proportion="-13.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_base.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="685" selection-end="792" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tabs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="20" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,22 +130,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb" />
-        <option value="$PROJECT_DIR$/app/views/pledge_mailer/pledge_link.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/index(1).html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/tabs.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/settings.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/map.js" />
         <option value="$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pledges/_pledge.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss" />
         <option value="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/clears.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/settings.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/dashboard.js" />
+        <option value="$PROJECT_DIR$/app/views/pledges/_pledge.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pledge.js" />
+        <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" />
       </list>
     </option>
   </component>
@@ -195,6 +226,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hack_for_cause" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hack_for_cause" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -696,7 +745,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="commited" />
+    <option name="LAST_COMMIT_MESSAGE" value="more fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -720,6 +769,11 @@
     <MESSAGE value="merge" />
     <MESSAGE value="divided pages into partials" />
     <MESSAGE value="commited" />
+    <MESSAGE value="settings" />
+    <MESSAGE value="merged changes" />
+    <MESSAGE value="more changes" />
+    <MESSAGE value="fix icon" />
+    <MESSAGE value="more fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -731,51 +785,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/mailers/pledge_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pledge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="2" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pledges/_pledge.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="781" selection-end="781" vertical-scroll-proportion="-12.692307">
           <folding />
         </state>
       </provider>
@@ -801,20 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="77" selection-start="906" selection-end="906" vertical-scroll-proportion="0.5442177">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pledges/_settings.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="9" selection-start="483" selection-end="483" vertical-scroll-proportion="-3.9">
@@ -822,9 +820,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="453" selection-end="453" vertical-scroll-proportion="-11.25">
+        <state line="0" column="6" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="20" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="9" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -836,9 +855,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pledge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="321" selection-end="321" vertical-scroll-proportion="0.3548387">
+        <state line="37" column="7" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pledges/_pledge.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="730" selection-end="730" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="685" selection-end="792" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="100" selection-start="741" selection-end="741" vertical-scroll-proportion="-8.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="350" selection-end="350" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="10" selection-start="351" selection-end="351" vertical-scroll-proportion="0.6741573">
           <folding />
         </state>
       </provider>

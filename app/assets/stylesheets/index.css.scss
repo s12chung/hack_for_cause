@@ -1,0 +1,40 @@
+@import "base";
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+body {
+    @include body_text;
+}
+
+.top_image {
+    position: relative;
+
+    .title {
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        @include main_header;
+        font-size: 50px;
+        width: 470px;
+    }
+}
+
+#tabSelector {
+    background-color: $red;
+}
+
+#settings{
+    .go-to-settings,
+    .go-to-pledge {
+        display:block;
+        background:$grey;
+        width:16px;
+        height:16px;
+        position:fixed;
+        bottom:0;
+        right:0;
+    }
+}
