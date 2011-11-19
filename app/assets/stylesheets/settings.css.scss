@@ -1,0 +1,15 @@
+@import "base";
+
+.settings {
+    padding: 5px;
+
+    .heading_message {
+        margin-bottom: 10px;
+    }
+
+    #settings-form {
+        border-top: 1px solid $black;
+        padding: 5px 10px;
+        @include body_header;
+    }
+}
