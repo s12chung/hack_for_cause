@@ -4,7 +4,6 @@
     <list default="true" id="c6ed59a3-6b43-4454-810b-1e6bfa487f1e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="hack_for_cause.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +56,7 @@
       <file leaf-file-name="index.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="208" selection-end="208" vertical-scroll-proportion="0.30337077">
+            <state line="28" column="10" selection-start="351" selection-end="351" vertical-scroll-proportion="0.6741573">
               <folding />
             </state>
           </provider>
@@ -746,7 +745,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="more fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -774,6 +773,7 @@
     <MESSAGE value="merged changes" />
     <MESSAGE value="more changes" />
     <MESSAGE value="fix icon" />
+    <MESSAGE value="more fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -892,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="208" selection-end="208" vertical-scroll-proportion="0.30337077">
+        <state line="28" column="10" selection-start="351" selection-end="351" vertical-scroll-proportion="0.6741573">
           <folding />
         </state>
       </provider>
