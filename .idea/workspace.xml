@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ed59a3-6b43-4454-810b-1e6bfa487f1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/clears.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/settings.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/settings.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
     </list>
     <ignored path="hack_for_cause.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +38,7 @@
       <file leaf-file-name="pledges.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="23" selection-start="321" selection-end="321" vertical-scroll-proportion="0.3548387">
+            <state line="18" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.58064514">
               <folding />
             </state>
           </provider>
@@ -52,7 +47,7 @@
       <file leaf-file-name="_base.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+            <state line="34" column="13" selection-start="1042" selection-end="1051" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -696,7 +691,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="commited" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -720,6 +715,7 @@
     <MESSAGE value="merge" />
     <MESSAGE value="divided pages into partials" />
     <MESSAGE value="commited" />
+    <MESSAGE value="settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pledges/_settings.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="9" selection-start="483" selection-end="483" vertical-scroll-proportion="-3.9">
@@ -829,6 +818,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1042" selection-end="1051" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/settings.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
@@ -838,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="321" selection-end="321" vertical-scroll-proportion="0.3548387">
+        <state line="18" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.58064514">
           <folding />
         </state>
       </provider>
