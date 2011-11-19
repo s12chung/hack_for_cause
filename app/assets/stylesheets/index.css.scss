@@ -11,6 +11,13 @@ body {
 
 .top_image {
     position: relative;
+
+    .title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @mixin main_header { font-weight: 800; color:$red; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+    }
 }
 
 #tabSelector {
