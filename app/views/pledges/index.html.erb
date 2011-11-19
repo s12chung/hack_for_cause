@@ -1,23 +1,25 @@
-<header>
-  <h1>Swipe</h1>
-</header>
+<div id="container">
+    <header>
+      <h1>Swipe</h1>
+    </header>
 
-<div id='gallery'>
-  <ul id='tabSelector' class='base-tabs'>
-    <li class='on'><a href="#">DASH</a></li>
-    <li><a href="#">PLEDGE</a></li>
-  </ul>
-  <div id='tabs'>
-    <ul>
-      <%= render :partial => "dashboard" %>
-      <%= render :partial => "pledge" %>
-    </ul>
-  </div>
-</div>
+    <div id='gallery'>
+      <ul id='tabSelector' class='base-tabs'>
+        <li><a href="#">DASH</a></li>
+        <li class="on"><a href="#">PLEDGE</a></li>
+      </ul>
+      <div id='tabs'>
+        <ul>
+          <%= render :partial => "dashboard" %>
+          <%= render :partial => "pledge" %>
+        </ul>
+      </div>
+    </div>
 
-<%= render :partial => "settings" %>
+    <%= render :partial => "settings" %>
 
-<div>
-  <a href="#" class="go-to-settings">GO TO SETTINGS</a>
-  <a href="#" class="go-to-pledge">GO TO PLEDGE</a>
+    <div id="settings">
+      <a href="#" class="go-to-settings"></a>
+      <a href="#" class="go-to-pledge"></a>
+    </div>
 </div>
