@@ -1,13 +1,11 @@
-<div id="container">
-    <header>
-      <h1>Swipe</h1>
-    </header>
-
-    <div id='gallery'>
-      <ul id='tabSelector' class='base-tabs'>
+<div id="header">
+    <ul id='tabSelector' class='base-tabs'>
         <li><a href="#">DASH</a></li>
         <li class="on"><a href="#">PLEDGE</a></li>
-      </ul>
+    </ul>
+</div>
+<div id="container">
+    <div id='gallery'>
       <div id='tabs'>
         <ul>
           <%= render :partial => "dashboard" %>

@@ -58,6 +58,7 @@ ul {
 body {
     color: $black;
 }
+
 #pledge {
 
     form {
@@ -90,8 +91,9 @@ body {
 #pledge_full_name,
 #pledge_email,
 #pledge_amount  {
-    padding:3%;
-    width:90%;
+    padding:1%;
+    width:93%;
+    font-size:14px;
 }
 .submit {
     border:0;
