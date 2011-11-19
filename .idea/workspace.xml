@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ed59a3-6b43-4454-810b-1e6bfa487f1e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb" afterPath="$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
     </list>
     <ignored path="hack_for_cause.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="38" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+            <state line="6" column="59" selection-start="329" selection-end="329" vertical-scroll-proportion="0.12711865">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20111119014450_create_pledges.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20111119014450_create_pledges.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.3601695">
+            <state line="14" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,9 +78,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/pledge_mailer/pledge_link.text.erb" />
-        <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb" />
+        <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
       </list>
     </option>
   </component>
@@ -657,7 +657,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="for charity_text" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -674,6 +674,7 @@
     <MESSAGE value="adding pro email settings" />
     <MESSAGE value="emailing fixes" />
     <MESSAGE value="styling" />
+    <MESSAGE value="for charity_text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,16 +784,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="38" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="315" selection-end="315" vertical-scroll-proportion="0.3601695">
+        <state line="6" column="59" selection-start="329" selection-end="329" vertical-scroll-proportion="0.12711865">
           <folding />
         </state>
       </provider>
