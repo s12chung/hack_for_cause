@@ -1,3 +1,67 @@
 // Place all the styles related to the pledges controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@mixin rounded-corners($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin linear-gradient($top, $bottom) {
+   background: -webkit-linear-gradient(top, $top, $bottom);
+   background: -moz-linear-gradient($top, $bottom);
+   background: -ms-linear-gradient($top, $bottom);
+   background: -o-linear-gradient($top, $bottom);
+}
+
+@mixin box-shadow($params) {
+    box-shadow: $params;
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+}
+
+
+$black: #363636;
+$red: #e4092d;
+$light_blue: #00b5ef;
+$white: #fff;
+
+$green: #8eb607;
+$yellow: #f9db2f;
+$dark_link: #304e79;
+$grey: #999;
+
+@mixin main_header { font-weight: 800; color:$red; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+@mixin secondary_header { text-transform:uppercase; font-weight: bold; color: $light_blue; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+@mixin body_header { font-weight: bold; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+@mixin body_text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+@mixin light_blue_button {
+    display: inline-block;
+    padding: 10px 25px;
+
+    @include rounded-corners(5px);
+    @include linear-gradient(#00C7F7, #009BEC);
+    @include box-shadow(1px 1px 2px $black);
+
+    text-transform:uppercase;
+    color: $white;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+    color: $black;
+}
+#pledge {
+    form {
+        .form_fields div{
+            @include secondary_header;
+        }
+
+        .submit {
+            margin-top: 10px;
+            @include light_blue_button;
+        }
+    }
+}
