@@ -3,7 +3,6 @@ $(document).ready(function() {
         var time = new Date().getTime();
         $("#pledge_time").val(time);
 
-
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
@@ -13,7 +12,6 @@ $(document).ready(function() {
                     "name": $("#pledge_charity_name").val(),
                     "latlng": latlng.toString(),
                     "amount": $("#pledge_amount").val(),
-
                     "time": time
                 };
 
@@ -25,14 +23,15 @@ $(document).ready(function() {
                     contentType: 'application/json',
                     dataType: 'json',
                     success: function() {
-                        $("#pledge-form").submit();
+                        $("#new_pledge").submit();
                     },
                     error: function() {
-                        $("#pledge-form").submit();
+                        $("#new_pledge").submit();
+
                     }
                 });
             }/*, error*/);
-         }
+        }
 
         e.preventDefault();
     });
