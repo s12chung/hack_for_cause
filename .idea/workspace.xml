@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ed59a3-6b43-4454-810b-1e6bfa487f1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/swipe.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/.gitkeep" afterPath="$PROJECT_DIR$/app/assets/javascripts/pledge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pledges/_pledge.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
     </list>
     <ignored path="hack_for_cause.iws" />
@@ -33,19 +29,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index(1).html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/index(1).html">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="22" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-3.22">
+            <state line="23" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.6845238">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
+      <file leaf-file-name="_dashboard.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="348" selection-end="348" vertical-scroll-proportion="0.4403131">
+            <state line="13" column="5" selection-start="0" selection-end="396" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pledge.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pledges/_pledge.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="5" selection-start="0" selection-end="802" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_settings.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pledges/_settings.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="6" selection-start="0" selection-end="2334" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,9 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/pledge_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/pledge_mailer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pledges_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -122,10 +133,13 @@
         <option value="$PROJECT_DIR$/app/views/pledge_mailer/pledge_link.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/index(1).html" />
-        <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/tabs.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/settings.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/map.js" />
+        <option value="$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pledges/_pledge.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
       </list>
     </option>
   </component>
@@ -707,7 +721,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="email formatting prep" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -728,6 +742,7 @@
     <MESSAGE value="for charity_text 2" />
     <MESSAGE value="time fix" />
     <MESSAGE value="email formatting prep" />
+    <MESSAGE value="merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,20 +754,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111119014450_create_pledges.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="267" selection-end="280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pledge_mailer/pledge_link.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/pledge.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -802,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/index(1).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="22" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-3.22">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tabs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="20" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
@@ -844,9 +838,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="0" selection-end="396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pledges/_pledge.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="5" selection-start="0" selection-end="802" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pledges/_settings.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="0" selection-end="2334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pledges/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="348" selection-end="348" vertical-scroll-proportion="0.4403131">
+        <state line="23" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.6845238">
           <folding />
         </state>
       </provider>

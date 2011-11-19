@@ -1,0 +1,26 @@
+<li class="pledge" style='display:block'>
+  <div id="pledge">
+    <%= form_for @pledge, :remote => true, :method => :post do |f| %>
+        <%= f.hidden_field :lat, :value => "10.12312" %>
+        <%= f.hidden_field :long, :value => "45.3234" %>
+
+        <%= f.hidden_field :charity_name, :value => "Free The Children" %>
+        <%= f.hidden_field :charity_text, :value => "The text" %>
+        <%= f.hidden_field :time, :value => "1324324" %>
+
+        <div class="form_fields">
+          <div>Your name</div>
+          <%= f.text_field :full_name %>
+
+          <div>Email</div>
+          <%= f.text_field :email %>
+
+          <div>Amount</div>
+          <%= f.text_field :amount %>
+        </div>
+
+        <div class="submit">Pledge</div>
+        <%= f.submit "Pledge" %>
+    <% end %>
+  </div>
+</li>

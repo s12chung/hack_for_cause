@@ -9,67 +9,13 @@
   </ul>
   <div id='tabs'>
     <ul>
-      <li class="dash" style='display:none'>
-        <section id="wrapper">
-          <header>
-            <h1>
-              Map</h1>
-          </header>
-          <meta content="width=620" name="viewport" />
-          <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-          <article>
-            <p>
-              Finding your location: <span id="status">checking...</span></p>
-          </article>
-        </section>
-      </li>
-      <li class="pledge" style='display:block'>
-        <div id="pledge">
-          <%= form_for @pledge, :remote => true, :method => :post do |f| %>
-              <%= f.hidden_field :lat, :value => "10.12312" %>
-              <%= f.hidden_field :long, :value => "45.3234" %>
-
-              <%= f.hidden_field :charity_name, :value => "Free The Children" %>
-              <%= f.hidden_field :charity_text, :value => "The text" %>
-              <%= f.hidden_field :time, :value => "1324324" %>
-
-              <div class="form_fields">
-                <div>Your name</div>
-                <%= f.text_field :full_name %>
-
-                <div>Email</div>
-                <%= f.text_field :email %>
-
-                <div>Amount</div>
-                <%= f.text_field :amount %>
-              </div>
-
-              <div class="submit">Pledge</div>
-              <%= f.submit "Pledge" %>
-          <% end %>
-        </div>
-      </li>
+      <%= render :partial => "dashboard" %>
+      <%= render :partial => "pledge" %>
     </ul>
   </div>
 </div>
 
-<div class="settings">
-  <strong>SETTINGS</strong>
-  <form id="settings-form">
-    Select Campaign:<br/>
-    <input type="radio" name="campaign" value="Vow_Of_Silence">Vow of Silence<br/>
-    <input type="radio" name="campaign" value="Haloween_For_Hunger">Halloween for Hunger<br/>
-    <input type="radio" name="campaign" value="East_Africa_Drought_Relief">East Africa Drought Relief<br/>
-    <input type="radio" name="campaign" value="Celebrate_For_Change">Celebrate for Change<br/>
-  </form>
-
-  <div id="Vow_Of_Silence" style="display:none">The Vow of Silence is Free The Children’s annual fundraising and awareness-raising campaign that engages tens of thousands of participants to stand up for children whose rights are not being upheld.</div>
-  <div id="Haloween_For_Hunger" style="display:none">Every year on October 31, young people trick-or-treat with our Halloween for Hunger campaign, collecting non-perishable food items for local food banks instead of candy. One of Free The Children’s two local campaigns, Halloween for Hunger gives youth a unique opportunity to help end hunger in their own communities—and raise awareness of an often invisible local problem.</div>
-  <div id="East_Africa_Drought_Relief" style="display:none">The images and news reports of the drought crisis are hard to take in, and the challenges may seem overwhelming. But together, we can make an impact in drought relief. Free The Children is providing extra support to our drought-stricken communities in Kenya through feeding programs for children and mothers, as well as partnering with UNHCR to bring emergency supplies to Somali refugees in Dadaab, Kenya. As always, this response is being paired with ongoing sustainable development projects, to help strengthen these communities in the face of future droughts. We invite you to join us in bringing short- and long-term drought relief to East Africa, through your very own Free The Children campaign.</div>
-  <div id="Celebrate_For_Change" style="display:none">The Celebrate for Change campaign lets you celebrate the birthdays of these children as you celebrate your own. Throw a party that raises awareness about these children and collects funds for Free The Children’s Adopt a Village program, which helps ensure that children around the world are awarded their basic rights.</div>
-</div>
-
-</div>
+<%= render :partial => "settings" %>
 
 <div>
   <a href="#" class="go-to-settings">GO TO SETTINGS</a>
