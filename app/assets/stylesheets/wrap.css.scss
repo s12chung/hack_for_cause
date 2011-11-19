@@ -1,0 +1,30 @@
+#container {
+    background:#d5d5d5;
+    padding:1%;
+}
+
+#tabSelector {
+    margin:0;
+    padding:0;
+    list-style:none;
+
+    li {
+        float:left;
+        display:inline;
+        width:50%;
+    }
+
+    a {
+        display:block;
+        color:#ffffff;
+        text-decoration:none;
+    }
+
+}
+
+.dash,
+.pledge,
+.settings {
+    padding:1%;
+    background:#ffffff;
+}

@@ -34,7 +34,7 @@ $grey: #999;
 
 @mixin main_header { font-weight: 800; color:$red; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
 @mixin secondary_header { text-transform:uppercase; font-weight: bold; color: $light_blue; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
-@mixin body_header { font-weight: bold; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+@mixin body_header { font-size:18px; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
 @mixin body_text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 @mixin light_blue_button {
@@ -50,13 +50,22 @@ $grey: #999;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
+ul {
+    margin:0;
+    padding:0;
+}
+
 body {
     color: $black;
 }
+
 #pledge {
+
     form {
-        .form_fields div{
-            @include secondary_header;
+
+        .form_fields div {
+            @include body_header;
+            margin:5px 0;
         }
 
         .submit {
@@ -64,4 +73,28 @@ body {
             @include light_blue_button;
         }
     }
+}
+
+#settings{
+    .go-to-settings,
+    .go-to-pledge {
+        display:block;
+        background:$grey;
+        width:16px;
+        height:16px;
+        position:fixed;
+        bottom:0;
+        right:0;
+    }
+}
+
+#pledge_full_name,
+#pledge_email,
+#pledge_amount  {
+    padding:1%;
+    width:93%;
+    font-size:14px;
+}
+.submit {
+    border:0;
 }
