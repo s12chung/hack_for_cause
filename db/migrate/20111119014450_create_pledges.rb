@@ -9,7 +9,9 @@ class CreatePledges < ActiveRecord::Migration
       t.float :long
 
       t.integer :time
+
       t.string :charity_name
+      t.text :charity_text
 
       t.timestamps
     end
