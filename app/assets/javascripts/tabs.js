@@ -1,9 +1,107 @@
 $(document).ready(function() {
+	
+	
+    var imageURL = new google.maps.MarkerImage("http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png");
+
+    function AddPin(i, myMap)
+    {
+        //console.log(i);
+        var myLatlng = new google.maps.LatLng(i[0],i[1]);
+        var marker2 = new google.maps.Marker({
+            position: myLatlng,
+            icon:imageURL,
+            map: myMap,
+            title:"You are here!"
+        });
+    }
+
+    function success(position) {
+        var s = document.querySelector('#status');
+
+        if (s.className == 'success') {
+            // not sure why we're hitting this twice in FF, I think it's to do with a cached result coming back
+            return;
+        }
+
+        s.innerHTML = "found you!";
+        s.className = 'success';
+
+        var mapcanvas = document.createElement('div');
+        mapcanvas.id = 'mapcanvas';
+        mapcanvas.style.height = '400px';
+        mapcanvas.style.width = '100%';
+
+        document.querySelector('article').appendChild(mapcanvas);
+
+        var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+        var myOptions = {
+            zoom: 15,
+            center: latlng,
+            mapTypeControl: false,
+            navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            //    title:"You are here!"
+        });
+
+        var otherLocations=new Array();
+        var location1 = new Array();
+        location1[0] = 43.70706;
+        location1[1] = -79.39890;
+
+        otherLocations[0] = location1;
+        otherLocations[1] = new Array(43.70592,-79.40540);
+        otherLocations[2] = new Array(43.71504,-79.38858);
+        otherLocations[3] = new Array(43.71004,-79.38858);
+        otherLocations[4] = new Array(43.71504,-79.38058);
+
+        for(var i in otherLocations)
+        {
+            AddPin(otherLocations[i],map);
+        }
+    }
+
+    function LoadMapData()
+    {
+        // load from server
+        var Url = "/api/pledge/get_locations";
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", Url, true );
+        xmlHttp.send( null );
+
+        return xmlHttp.responseText;
+    }
+    function error(msg) {
+        var s = document.querySelector('#status');
+        s.innerHTML = typeof msg == 'string' ? msg : "failed";
+        s.className = 'fail';
+
+        // console.log(arguments);
+    }
+
+    /**if (navigator.geolocation) {
+     navigator.geolocation.getCurrentPosition(success, error);
+     } else {
+     error('not supported');
+     }**/
 // tabs
     tabs = new Swipe(document.getElementById('tabs'), {
         startSlide: 1,
         callback: function(event,index,elem) {
             setTab(selectors[index]);
+			if (index == 0) {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(success, error);
+				} else {
+					error('not supported')
+				}
+			}
         }
     }),
         selectors = document.getElementById('tabSelector').children;
