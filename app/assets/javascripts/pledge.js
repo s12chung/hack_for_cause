@@ -24,14 +24,22 @@ $(document).ready(function() {
                     dataType: 'json',
                     success: function() {
                         $("#new_pledge").submit();
+                        $("#pledge_amount").val("");
+                        $("#pledge_email").val("");
+                        $("#pledge_full_name").val("");
+
+
                     },
                     error: function() {
                         $("#new_pledge").submit();
+                        $("#pledge_amount").val("");
+                        $("#pledge_email").val("");
+                        $("#pledge_full_name").val("");
 
                     }
                 });
             }/*, error*/);
-        }
+         }
 
         e.preventDefault();
     });
