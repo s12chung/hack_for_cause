@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ed59a3-6b43-4454-810b-1e6bfa487f1e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pledge.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pledge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb" afterPath="$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss" />
     </list>
     <ignored path="hack_for_cause.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wrap.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wrap.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="8" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+            <state line="33" column="16" selection-start="478" selection-end="478" vertical-scroll-proportion="0.67741936">
               <folding />
             </state>
           </provider>
@@ -54,10 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pledge.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pledge.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pledge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="7" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.9354839">
+            <state line="23" column="34" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="21" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +89,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/tabs.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/settings.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/map.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_base.css.scss" />
         <option value="$PROJECT_DIR$/app/views/pledges/_settings.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/clears.css.scss" />
@@ -88,11 +96,12 @@
         <option value="$PROJECT_DIR$/app/views/pledges/_pledge.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pledges/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pledges.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/pledges/_dashboard.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pledge.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/index.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss" />
       </list>
     </option>
   </component>
@@ -775,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.48387095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="100" selection-start="741" selection-end="741" vertical-scroll-proportion="0.4829932">
@@ -824,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="12" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
@@ -840,7 +835,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pledge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="7" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.9354839">
+        <state line="23" column="34" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/index.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="21" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/wrap.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="478" selection-end="478" vertical-scroll-proportion="0.67741936">
           <folding />
         </state>
       </provider>
