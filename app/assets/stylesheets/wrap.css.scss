@@ -12,14 +12,22 @@
     li {
         float:left;
         display:inline;
-        width:50%;
     }
 
     a {
         display:block;
         color:#ffffff;
         text-decoration:none;
+		background:url('/images/nav_unselected.png') no-repeat;
+		text-align:center;
+		width:319px;
+		height:39px;
+		padding-top:19px;
     }
+
+	li.on a {
+		background:url('/images/nav_selected.png') no-repeat;
+	}
 
 }
 
