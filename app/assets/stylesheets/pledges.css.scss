@@ -75,6 +75,17 @@ body {
     }
 }
 
+#pledge_full_name,
+#pledge_email,
+#pledge_amount  {
+    padding:1%;
+    width:93%;
+    font-size:14px;
+}
+.submit {
+    border:0;
+}
+
 #settings{
     .go-to-settings,
     .go-to-pledge {
@@ -86,15 +97,4 @@ body {
         bottom:0;
         right:0;
     }
-}
-
-#pledge_full_name,
-#pledge_email,
-#pledge_amount  {
-    padding:1%;
-    width:93%;
-    font-size:14px;
-}
-.submit {
-    border:0;
 }

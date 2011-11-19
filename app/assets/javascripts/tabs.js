@@ -128,13 +128,14 @@ $(document).ready(function() {
         $('.go-to-settings').click(function(){
             $(this).hide();
             $('.go-to-pledge').show();
-            $('#gallery').hide();
+            $('#gallery, #tabSelector').hide();
             $('.settings').show();
+			
         });
         $('.go-to-pledge').click(function(){
             $(this).hide();
             $('.go-to-settings').show();
-            $('#gallery').show();
+            $('#gallery, #tabSelector').show();
             $('.settings').hide();
         });
     });
