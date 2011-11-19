@@ -1,20 +1,6 @@
 @import "base";
 
-ul {
-    margin:0;
-    padding:0;
-}
-
-body {
-    @include body_text;
-}
-
-#tabSelector {
-    background-color: $red;
-}
-
 #pledge {
-
     form {
 
         .form_fields div {
@@ -38,17 +24,4 @@ body {
 }
 .submit {
     border:0;
-}
-
-#settings{
-    .go-to-settings,
-    .go-to-pledge {
-        display:block;
-        background:$grey;
-        width:16px;
-        height:16px;
-        position:fixed;
-        bottom:0;
-        right:0;
-    }
 }
