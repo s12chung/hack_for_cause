@@ -8,7 +8,7 @@ class CreatePledges < ActiveRecord::Migration
       t.float :lat
       t.float :long
 
-      t.integer :time
+      t.string :time
 
       t.string :charity_name
       t.text :charity_text
