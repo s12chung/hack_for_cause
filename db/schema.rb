@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20111119014450) do
     t.float    "amount"
     t.float    "lat"
     t.float    "long"
-    t.integer  "time"
+    t.string   "time"
     t.string   "charity_name"
     t.text     "charity_text"
     t.datetime "created_at"
