@@ -8,6 +8,11 @@
         <%= f.hidden_field :charity_text, :value => "The text" %>
         <%= f.hidden_field :time, :value => "1324324" %>
 
+		<div class="above-form">
+			<p>Your donation will help young people achieve their fullest potential as agents of change.</p>
+			<img src="/images/free_the_children.png" />
+		</div>
+
         <div class="form_fields">
           <div>Your name</div>
           <%= f.text_field :full_name %>
@@ -18,8 +23,9 @@
           <div>Amount</div>
           <%= f.text_field :amount %>
         </div>
-
+		<div class="input-container">
         <%= f.submit "Pledge", :class => "submit" %>
+		</div>
     <% end %>
   </div>
 </li>

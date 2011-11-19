@@ -35,20 +35,15 @@ body {
     padding:1%;
     width:93%;
     font-size:14px;
+	@include rounded-corners(5px);
+	border:1px solid #949494;
+	@include linear-gradient(#d5d5d5, #fafafa);
 }
 .submit {
     border:0;
 }
 
-#settings{
-    .go-to-settings,
-    .go-to-pledge {
-        display:block;
-        background:$grey;
-        width:16px;
-        height:16px;
-        position:fixed;
-        bottom:0;
-        right:0;
-    }
+.input-container {
+	width:90px;
+	margin:0 auto;
 }
