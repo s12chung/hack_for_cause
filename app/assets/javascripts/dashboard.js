@@ -4,8 +4,9 @@ $(document).ready(function() {
     setInterval(function() {
         startingNum+=Math.floor(Math.random()*10);
         var string = startingNum.toString();
-        for(i=0; i< string.length; i++) {
-            
+        var i;
+        for(i=0; i< string.length -1; i++) {
+            string.charAt(i);
         }
 
         num.html(startingNum);
