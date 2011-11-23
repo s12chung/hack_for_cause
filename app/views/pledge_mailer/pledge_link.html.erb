@@ -1,11 +1,54 @@
-Thanks for the pledge <%= @pledge.full_name %>!
+<html>
+<head>
+  <style type="text/css" media="all">
+      BODY {
+          background-color: #d5d5d5;
+          color: #363636;
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 22px;
+          font-weight: 300;
+      }
 
-To finish the pledge and donate, click <%= link_to "here", "http://www.freethechildren.com/donate/" %>.
+      A {
+          color: #00b6f8;
+          font-weight: bold;
+      }
 
-<h3>
-  About <%= @pledge.charity_name %>
-</h3>
+      H1 {
+          font-size: 45px;
+          font-weight: bold;
+          margin-bottom: 50px;
+      }
 
-<div>
-  <%= @pledge.charity_text %>
+      #container {
+          background-color: #fff;
+          margin: 30px auto;
+          width: 600px;
+      }
+
+      #header {
+          background: #fff url('images/email_header.png') no-repeat top left;
+          height: 134px;
+          width: 600px;
+      }
+
+      #containerText {
+          padding: 30px 25px 50px;
+      }
+
+  </style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+  </div>
+  <div id="containerText">
+    <h1>Thanks for your pledge!</h1>
+    <p><%= @pledge.full_name %>,</p>
+    <p>You pledged <strong>$<%= pledge_amount %></strong> to <strong><%= @pledge.charity_name %></strong>. <%= @pledge.charity_text %></p>
+    <p>To complete your donation, simply <%= link_to "click here", "http://www.freethechildren.com/donate/" %>.
+    <p>Your contributions are sincerely appreciated!</p>
+  </div>
 </div>
+</body>
+</html>
