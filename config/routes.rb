@@ -52,9 +52,8 @@ HackForCause::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  resources :pledges, :only => [:index, :create] do
-    get 'email'
-  end
+  resources :pledges, :only => [:index, :create]
+  get "email/:key" => "pledges#email", :as => "email"
   root :to => 'pledges#index'
 
   # See how all your routes lay out with "rake routes"

@@ -1,10 +1,6 @@
 $(document).ready(function() {
-
-// settings
-    $("input[name=campaign]").change(function() {
-        var selection =$(this).val();
-        var charity_text = $("#"+selection).html();
-        $("#charity_text").val(charity_text);
-        $("#charity_name").val(selection);
+    $(".campaign_radio").click(function(){
+        var value = $(this).attr("data-id");
+        $("#pledge_campaign_id").val(value);
     });
 });

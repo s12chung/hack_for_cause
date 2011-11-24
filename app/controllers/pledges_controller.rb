@@ -8,7 +8,8 @@ class PledgesController < ApplicationController
   end
 
   def email
-    @pledge = Pledge.find(params[:pledge_id])
+    @pledge = Pledge.find_by_key(params[:key])
+    @campaign = @pledge.campaign
     render :template => "pledge_mailer/pledge_link"
   end
 end
