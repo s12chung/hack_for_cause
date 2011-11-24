@@ -55,16 +55,13 @@ ActiveRecord::Schema.define(:version => 20111124022440) do
   end
 
   create_table "pledges", :force => true do |t|
+    t.integer  "campaign_id"
     t.string   "full_name"
     t.string   "email"
     t.float    "amount"
     t.float    "lat"
     t.float    "long"
     t.string   "time"
-    t.string   "charity_name"
-    t.string   "charity_title"
-    t.text     "charity_description"
-    t.string   "charity_link"
     t.string   "key"
     t.datetime "created_at"
     t.datetime "updated_at"
