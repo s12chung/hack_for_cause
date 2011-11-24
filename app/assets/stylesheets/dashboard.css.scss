@@ -1,24 +1,37 @@
-#number_container {
-    .number {
-        background: url("/images/numberback.png") no-repeat;
-        width: 103px;
-        height: 160px;
+@import "base";
 
-        color: white;
-        font-size: 150px;
+.dash {
+    text-align: center;
+    
+    #number_container {
+        margin: 0 auto;
+        display: inline-block;
+        
+        .number {
+            background: url("/images/numberback.png") no-repeat;
+            width: 100px;
+            height: 160px;
 
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        line-height: 0.5;
-        padding-left: 7px;
-        padding-top: 32px;
+            color: white;
+            font-size: 150px;
+            font-weight: bold;
 
-        float: left;
+            text-align: center;
+            margin-right: 3px;
+            line-height: 0.92;
+
+            float: left;
+        }
     }
-}
+    .pledges_header {
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 40px;
+    }
 
-#mapContainer {
-	border:1px #000 solid;
-	width:90%;
-	padding:10px;
+    #mapContainer {
+        margin: 0 auto;
+
+        width:90%;
+    }
 }
