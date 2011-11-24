@@ -1,7 +1,8 @@
 $(document).ready(function() {
     var imageURL = new google.maps.MarkerImage("http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png");
 	
-    function AddPin(i, myMap) {
+    function AddPin(i, myMap)
+    {
         //console.log(i);
         var myLatlng = new google.maps.LatLng(i[0],i[1]);
         var marker2 = new google.maps.Marker({
@@ -36,13 +37,15 @@ $(document).ready(function() {
             "name": $("#pledge_charity_name").val(),
             "latlng": latlng.toString(),
         };
-				
+		jQuery.support.cors = true;
 		$.ajax({
 			type: "GET",
 			url: "http://hubba-demo.elasticbeanstalk.com/dashboard/api/pledge/locations",
 			data: apiStruct,
 			contentType: 'application/json',
-			dataType: 'json',
+			dataType: 'jsonp',
+			timeout: 5000,
+			callbackParameter: "jsoncallback",
 			success: function(otherLocations) {
 				for(var i in otherLocations)
 				{
@@ -51,7 +54,7 @@ $(document).ready(function() {
 				}
 			},
 			error: function() {
-				error('no response')
+				error('cannot find past donors')
 			}
 		});
 
