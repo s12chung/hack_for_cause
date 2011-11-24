@@ -9,6 +9,11 @@ body {
     @include body_text;
 }
 
+p.notice,
+p.alert {
+    display:none;
+}
+
 .top_image {
     position: relative;
 
