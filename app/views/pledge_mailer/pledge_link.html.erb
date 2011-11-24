@@ -346,7 +346,7 @@
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 											<td valign="top">
                                             	<div mc:edit="std_preheader_links">
-                                                	Is this email not displaying correctly? <%= link_to "View it in your browser", pledge_email_url(@pledge) %>.
+                                                	Is this email not displaying correctly? <%= link_to "View it in your browser", email_url(@pledge.key) %>.
                                                 </div>
                                             </td>
 											<!-- *|END:IF|* -->
@@ -390,8 +390,8 @@
                                                             <div mc:edit="std_content00">
                                                                 <h1>Thanks for your pledge!</h1>
                                                                 <p><%= @pledge.full_name %>,</p>
-                                                                <p>You pledged <strong>$<%= @pledge.amount %></strong> to <strong><%= @campaign.title %></strong>. <%= @pledge.description %></p>
-                                                                <p>To complete your donation, simply <%= link_to "click here", @pledge.link %>.
+                                                                <p>You pledged <strong>$<%= @pledge.amount %></strong> to <strong><%= @campaign.title %></strong>. <%= @campaign.description %></p>
+                                                                <p>To complete your donation, simply <%= link_to "click here", @campaign.link %>.
                                                                 <p>Your contributions are sincerely appreciated!</p>
                                                             </div>
 														</td>
