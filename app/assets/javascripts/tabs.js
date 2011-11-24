@@ -34,7 +34,7 @@ $(document).ready(function() {
         var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 		
 		var apiStruct = {
-            "name": $("#pledge_charity_name").val(),
+            "campaign": $("#pledge_campaign_id").val(),
             "latlng": latlng.toString(),
         };
 		jQuery.support.cors = true;
