@@ -2,6 +2,8 @@ $(document).ready(function() {
     $("#pledge-submit").click(function(e) {
         var time = new Date().getTime();
         $("#pledge_time").val(time);
+        $('#pledge-submit').hide();
+        $('#loader').show();
 
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
@@ -18,7 +20,7 @@ $(document).ready(function() {
                 //var apiJSON = $.toJSON(apiStruct);
                 $.ajax({
                     type: "GET",
-                    url: "http://ec2-50-19-174-218.compute-1.amazonaws.com/dashboard/api/pledge/push",
+                    url: "http://hubba-demo.elasticbeanstalk.com",
                     data: apiStruct,
                     contentType: 'application/json',
                     dataType: 'json',
@@ -27,7 +29,9 @@ $(document).ready(function() {
                         $("#pledge_amount").val("");
                         $("#pledge_email").val("");
                         $("#pledge_full_name").val("");
-
+                        $('#pledge-submit').show();
+                        $('#loader').hide();
+                        alert('Thank for your pledging.');
 
                     },
                     error: function() {
@@ -35,6 +39,8 @@ $(document).ready(function() {
                         $("#pledge_amount").val("");
                         $("#pledge_email").val("");
                         $("#pledge_full_name").val("");
+                        $('#pledge-submit').show();
+                        $('#loader').hide();
 
                     }
                 });
