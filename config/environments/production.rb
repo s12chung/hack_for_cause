@@ -67,4 +67,6 @@ HackForCause::Application.configure do
       :domain         => 'heroku.com'
   }
   ActionMailer::Base.delivery_method = :smtp
+
+  config.assets.compile = false
 end
