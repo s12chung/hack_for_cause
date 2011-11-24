@@ -1,8 +1,7 @@
 $(document).ready(function() {
     var imageURL = new google.maps.MarkerImage("http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png");
 	
-    function AddPin(i, myMap)
-    {
+    function AddPin(i, myMap) {
         //console.log(i);
         var myLatlng = new google.maps.LatLng(i[0],i[1]);
         var marker2 = new google.maps.Marker({
@@ -40,7 +39,7 @@ $(document).ready(function() {
 				
 		$.ajax({
 			type: "GET",
-			url: "http://hubba-demo.elasticbeanstalk.com/",
+			url: "http://hubba-demo.elasticbeanstalk.com/dashboard/api/pledge/locations",
 			data: apiStruct,
 			contentType: 'application/json',
 			dataType: 'json',
