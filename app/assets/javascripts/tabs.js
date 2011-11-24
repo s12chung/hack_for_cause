@@ -42,7 +42,7 @@ $(document).ready(function() {
 			type: "GET",
 			url: "http://hubba-demo.elasticbeanstalk.com/dashboard/api/pledge/locations",
 			data: apiStruct,
-			contentType: 'application/json',
+			contentType: 'application/javascript',
 			dataType: 'jsonp',
 			timeout: 5000,
 			callbackParameter: "jsoncallback",
