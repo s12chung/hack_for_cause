@@ -390,8 +390,8 @@
                                                             <div mc:edit="std_content00">
                                                                 <h1>Thanks for your pledge!</h1>
                                                                 <p><%= @pledge.full_name %>,</p>
-                                                                <p>You pledged <strong>$<%= @pledge.amount %></strong> to <strong><%= @pledge.charity_name %></strong>. <%= @pledge.charity_text %></p>
-                                                                <p>To complete your donation, simply <%= link_to "click here", "http://www.freethechildren.com/donate/" %>.
+                                                                <p>You pledged <strong>$<%= @pledge.amount %></strong> to <strong><%= @campaign.title %></strong>. <%= @pledge.description %></p>
+                                                                <p>To complete your donation, simply <%= link_to "click here", @pledge.link %>.
                                                                 <p>Your contributions are sincerely appreciated!</p>
                                                             </div>
 														</td>

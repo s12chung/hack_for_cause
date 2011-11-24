@@ -31,7 +31,7 @@ $(document).ready(function() {
                         $("#pledge_full_name").val("");
                         $('#pledge-submit').show();
                         $('#loader').hide();
-                        alert('Thank for your pledging.');
+                        alert('Thank for your pledge.');
 
                     },
                     error: function() {
