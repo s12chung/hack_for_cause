@@ -1,5 +1,23 @@
-#mapContainer
-{
+#number_container {
+    .number {
+        background: url("/images/numberback.png") no-repeat;
+        width: 103px;
+        height: 160px;
+
+        color: white;
+        font-size: 150px;
+
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        line-height: 0.5;
+        padding-left: 7px;
+        padding-top: 32px;
+
+        float: left;
+    }
+}
+
+#mapContainer {
 	border:1px #000 solid;
 	width:90%;
 	padding:10px;

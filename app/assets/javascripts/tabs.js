@@ -1,8 +1,6 @@
 $(document).ready(function() {
-	
-	
     var imageURL = new google.maps.MarkerImage("http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png");
-
+	
     function AddPin(i, myMap)
     {
         //console.log(i);
@@ -34,6 +32,29 @@ $(document).ready(function() {
         document.querySelector('article').appendChild(mapcanvas);
 
         var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+		
+		var apiStruct = {
+            "name": $("#pledge_charity_name").val(),
+            "latlng": latlng.toString(),
+        };
+				
+		$.ajax({
+			type: "GET",
+			url: "http://hubba-demo.elasticbeanstalk.com/",
+			data: apiStruct,
+			contentType: 'application/json',
+			dataType: 'json',
+			success: function(otherLocations) {
+				for(var i in otherLocations)
+				{
+					console.log(otherLocations) 
+					AddPin(otherLocations[i],map);
+				}
+			},
+			error: function() {
+				error('no response')
+			}
+		});
 
         var myOptions = {
             zoom: 15,
@@ -50,7 +71,7 @@ $(document).ready(function() {
             //    title:"You are here!"
         });
 
-        var otherLocations=new Array();
+        /*var otherLocations=new Array();
         var location1 = new Array();
         location1[0] = 43.70706;
         location1[1] = -79.39890;
@@ -64,19 +85,9 @@ $(document).ready(function() {
         for(var i in otherLocations)
         {
             AddPin(otherLocations[i],map);
-        }
+        } */
     }
 
-    function LoadMapData()
-    {
-        // load from server
-        var Url = "/api/pledge/get_locations";
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", Url, true );
-        xmlHttp.send( null );
-
-        return xmlHttp.responseText;
-    }
     function error(msg) {
         var s = document.querySelector('#status');
         s.innerHTML = typeof msg == 'string' ? msg : "failed";
