@@ -346,7 +346,7 @@
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 											<td valign="top">
                                             	<div mc:edit="std_preheader_links">
-                                                	Is this email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                	Is this email not displaying correctly? <%= link_to "View it in your browser", pledge_email_url(@pledge) %>.
                                                 </div>
                                             </td>
 											<!-- *|END:IF|* -->
