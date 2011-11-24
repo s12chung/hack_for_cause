@@ -4,10 +4,16 @@
     padding: 5px;
 
     .heading_message {
+        padding:10px;
         margin-bottom: 10px;
     }
 
     #settings-form {
+
+        div {
+            padding:10px 0;
+        }
+
         border-top: 1px solid $black;
         padding: 5px 10px;
         @include body_header;
