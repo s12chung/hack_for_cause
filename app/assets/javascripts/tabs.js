@@ -45,7 +45,6 @@ $(document).ready(function() {
 			contentType: 'application/javascript',
 			dataType: 'jsonp',
 			timeout: 5000,
-			callbackParameter: "jsoncallback",
 			success: function(otherLocations) {
 				for(var i in otherLocations)
 				{
