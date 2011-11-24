@@ -48,7 +48,6 @@ $(document).ready(function() {
 			success: function(otherLocations) {
 				for(var i in otherLocations)
 				{
-					console.log(otherLocations) 
 					AddPin(otherLocations[i],map);
 				}
 			},
