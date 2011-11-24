@@ -9,14 +9,15 @@
         
         .number {
             background: url("/images/numberback.png") no-repeat;
-            width: 100px;
-            height: 160px;
+            width: 60px;
+            height: 94px;
 
             color: white;
-            font-size: 150px;
+            font-size: 90px;
             font-weight: bold;
 
             text-align: center;
+            margin-top:10px;
             margin-right: 3px;
             line-height: 0.92;
 
@@ -26,7 +27,7 @@
     .pledges_header {
         margin: 0 auto;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 175%;
     }
 
     #mapContainer {

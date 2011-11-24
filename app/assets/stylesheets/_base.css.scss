@@ -31,7 +31,7 @@ $grey: #999;
 
 @mixin main_header { font-weight: 800; color:$red; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
 @mixin secondary_header { text-transform:uppercase; font-weight: bold; color: $light_blue; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
-@mixin body_header { font-size:18px; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+@mixin body_header { font-size:100%; font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
 @mixin body_text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 @mixin light_blue_button {
