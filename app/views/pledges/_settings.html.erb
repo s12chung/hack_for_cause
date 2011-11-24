@@ -5,7 +5,7 @@
   <form id="settings-form">
     <% Campaign.all.each do |campaign| %>
         <div>
-          <input type="radio" id="<%= campaign.html_id %>" name="<%= campaign.html_id %>" class="campaign_radio" data-id="<%= campaign.id %>">
+          <input type="radio" id="<%= campaign.html_id %>" name="campaign" class="campaign_radio" data-id="<%= campaign.id %>">
           <label for="<%= campaign.html_id %>"><%= campaign.title %></label>
         </div>
     <% end %>
