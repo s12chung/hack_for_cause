@@ -38,8 +38,6 @@ $(document).ready(function() {
                     "time": time
                 };
 
-                if (!apiStruct.campaign || apiStruct.campaign<=0) apiStruct.campaign = 1;
-
                 $.ajax({
                     type: "GET",
                     url: "http://hubba-demo.elasticbeanstalk.com/dashboard/api/pledge/push",

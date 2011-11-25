@@ -5,6 +5,7 @@ class PledgesController < ApplicationController
 
   def create
     PledgeMailer.pledge_link(Pledge.create(params[:pledge].merge('key' => SecureRandom.urlsafe_base64))).deliver
+    render :nothing => true
   end
 
   def email
