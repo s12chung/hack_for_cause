@@ -24,7 +24,7 @@ $(document).ready(function() {
 
         var time = new Date().getTime();
         $("#pledge_time").val(time);
-        $('#pledge-submit').hide();
+        $('#pledge-submit, #settings').hide();
         $('#loader').show();
 
         if (navigator.geolocation) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
                         $("#pledge_email").val("");
                         $("#pledge_full_name").val("");
 
-                        $('#pledge-submit').show();
+                        $('#pledge-submit, #settings').show();
 
                         $('#loader').hide();
                         alert('Thank for your pledge.');
@@ -66,7 +66,7 @@ $(document).ready(function() {
                         $("#pledge_email").val("");
                         $("#pledge_full_name").val("");
 
-                        $('#pledge-submit').show();
+                        $('#pledge-submit, #settings').show();
 
                         $('#loader').hide();
                     }
