@@ -21,7 +21,7 @@ $(document).ready(function() {
             e.preventDefault();
             return;
         }
-        
+
         var time = new Date().getTime();
         $("#pledge_time").val(time);
         $('#pledge-submit').hide();
@@ -38,10 +38,8 @@ $(document).ready(function() {
                     "time": time
                 };
 
-                //var apiJSON = $.toJSON(apiStruct);
+                if (!apiStruct.campaign || apiStruct.campaign<=0) apiStruct.campaign = 1;
 
-                if (!apiStruct.campaign || apiStruct.campaign<=0) apiStruct.campaign = 1;                
-                
                 $.ajax({
                     type: "GET",
                     url: "http://hubba-demo.elasticbeanstalk.com/dashboard/api/pledge/push",
@@ -63,9 +61,9 @@ $(document).ready(function() {
                         alert('Thank for your pledge.');
                     },
                     error: function() {
-                        alert("Error sending pledge.");                        
+                        alert("Error sending pledge.");
                         $("#new_pledge").submit();
-              
+
                         $("#pledge_amount").val("");
                         $("#pledge_email").val("");
                         $("#pledge_full_name").val("");
