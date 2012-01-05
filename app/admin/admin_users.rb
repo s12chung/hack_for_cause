@@ -6,6 +6,14 @@ ActiveAdmin.register AdminUser do
         redirect_to admin_dashboard_path
       end
     end
+
+    before_filter :check_password, :only => :update
+    def check_password
+      new_password = params[:admin_user][:password]
+      if new_password && new_password.empty?
+        params['admin_user'].delete 'password'
+      end
+    end
   end
 
   menu :if => proc{ current_admin_user.edit_users }
@@ -32,11 +40,11 @@ ActiveAdmin.register AdminUser do
   end
 
   form do |f|
-      f.inputs do
-        f.input :email
-        f.input :password
-        f.input :edit_users
-      end
-      f.buttons
+    f.inputs do
+      f.input :email
+      f.input :password
+      f.input :edit_users
     end
+    f.buttons
+  end
 end
